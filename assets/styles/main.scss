@@ -1,0 +1,107 @@
+@import './components/buttons';
+@import './base/typography';
+@import './components/HeroCarousel';
+@import './pages/news';
+
+body {
+  font-family: Proxima, sans-serif;
+}
+
+th,
+td,
+tr {
+  border: 1px solid black;
+  padding: 5px;
+}
+table {
+  border-spacing: 15px;
+  margin: 10px;
+  border-collapse: collapse;
+}
+table td {
+  font-weight: bold;
+}
+
+body,
+html {
+  scroll-behavior: smooth;
+}
+
+button:focus {
+  outline: none;
+}
+
+.blog-slider .slick-list {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.home-hero-wrapper .slick-dots li {
+  button::before {
+    font-size: 8px;
+  }
+
+  &.slick-active button::before {
+    color: #2275c3;
+    opacity: 1;
+  }
+}
+
+// Tab slider transition
+.tr-slide-leave-active,
+.tr-slide-enter-active {
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+.tr-slide-enter,
+.tr-slide-leave-to {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 20px;
+}
+
+.tr-slide-enter {
+  transform: translateX(-100%);
+}
+.tr-slide-leave-to {
+  transform: translateX(100%);
+}
+.gm-style .gm-style-iw-c {
+  border-radius: 5px !important;
+  top: -115px !important;
+}
+
+// News page - news section
+.news-section__page-nav {
+  cursor: pointer;
+  height: 16px;
+  width: auto;
+  margin: 0 25px;
+}
+
+/* disable the below small triangle/anchor */
+.gm-style .gm-style-iw-t::after {
+  display: none !important;
+}
+// .gm-style-iw button {
+//   display: none !important;
+// }
+
+// disable the close icon
+.gm-ui-hover-effect {
+  display: none !important;
+}
+
+.gm-style-iw-d {
+  overflow: auto !important;
+}
+
+.gm-style-iw.gm-style-iw-c {
+  padding: 0;
+  min-width: 170px !important;
+}
+.alertify-notifier.ajs-right .ajs-message {
+  color: white !important;
+}

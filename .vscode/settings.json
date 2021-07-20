@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/f4f1154e-5b67-4d38-a4bb-a179336a0f72/resourceGroups/newopp/providers/Microsoft.Web/sites/GovernmentUs",
+    "appService.deploySubpath": "."
+}
